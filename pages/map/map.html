@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="map.css">
+    <title>Online-zoo</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <h1 class="visually-hidden">Online Zoo</h1>
+                <a href="../../index.html">
+                    <img class="header__logo" src="../../assets/icons/logo-black.svg" alt="">
+                </a>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="../../index.html">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="../zoos/panda/panda.html#live_broadcast">Zoos</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link nav__link_active" href="map.html">Map</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#contacts">Contact Us</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp?node-id=0%3A1">Design</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__toggle">
+                    <div class="toggle__bg">
+                        <div class="toggle__dot"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="map">
+            <div class="main-container">
+                <h3 class="map__title">Choose your favorite</h3>
+                <p class="map__text">As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat, and we are determined to assist in all aspects, including providing veterinary support and raising much-needed
+                    emergency funds. Zoo Online saves wildlife and inspires everyone to make conservation a priority in their lives. Animals have the right to a pain-free and happy life. They have equal claim to the resources of this planet, and deserve
+                    a life of dignity and compassion.As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat.</p>
+                <div class="slider__container">
+                    <div class="slider">
+                        <img class="slider__arrow prev-prev" src="../../assets/icons/prev-arrow-black.svg" alt="">
+                        <div class="gallery">
+                            <div class="gallery__inner">
+                                <img class="gallery__img" src="../../assets/images/map-gorilla.png" name="gorilla" alt="gorilla">
+                                <img class="gallery__img gallery__img_active" src="../../assets/images/map-panda.png" name="panda" alt="panda">
+                                <img class="gallery__img" src="../../assets/images/map-alligator.png" name="alligator" alt="alligator">
+                                <img class="gallery__img" src="../../assets/images/map-bird.png" name="eagle" alt="bird">
+                                <img class="gallery__img" src="../../assets/images/map-tiger.png" name="tiger" alt="tiger">
+                                <img class="gallery__img" src="../../assets/images/map-elephant.png" name="elephant" alt="elephant">
+                                <img class="gallery__img" src="../../assets/images/map-lion.png" name="lion" alt="lion">
+                                <img class="gallery__img" src="../../assets/images/map-zebra.png" name="zebra" alt="zebra">
+                            </div>
+                        </div>
+                        <img class="slider__arrow next-next" src="../..//assets/icons/next-arrow-black.svg" alt="">
+                    </div>
+                    <form class="form_range main__form_range">
+                        <label>
+                            <span class="label__text label__text_active">02/</span><span class="label__text">08</span> <br />
+                            <input class="range pets_range" type="range" min="0" max="7" value="1" />
+                        </label>
+                    </form>
+                </div>
+                <div class="map__container">
+                    <div class="map__pin-container map__pin-container__eagle">
+                        <a href="../zoos/eagle/eagle.html" class="pin-link">
+                            <div class="pin__form" id="eagle">
+                                <div class="pin__img pin__img-eagle"></div>
+                            </div>
+                            <div class="map-tooltip">
+                                <div class="map-tooltip__img map-tooltip__img-eagle"></div>
+                                <div class="map-tooltip__description">
+                                    <h4 class="map-tooltip__title">West End Bald Eagle</h4>
+                                    <p class="map-tooltip__text">
+                                        <b>Region:</b> on an island near Los Angeles
+                                    </p>
+                                    <p class="map-tooltip__text">
+                                        <b>Population:</b> more than 270 pairs in 2013
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="map__pin-container map__pin-container__alligator">
+                        <a href="../zoos/alligator/alligator.html" class="pin-link">
+                            <div class="pin__form" id="alligator">
+                                <div class="pin__img pin__img-alligator"></div>
+                            </div>
+                            <div class="map-tooltip">
+                                <div class="map-tooltip__img map-tooltip__img-alligator"></div>
+                                <div class="map-tooltip__description">
+                                    <h4 class="map-tooltip__title">Alligator</h4>
+                                    <p class="map-tooltip__text">
+                                        <b>Region:</b> on an island near Los Angeles
+                                    </p>
+                                    <p class="map-tooltip__text">
+                                        <b>Population:</b> Roughly 1.25 million
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="map__pin-container map__pin-container__gorilla">
+                        <a href="../zoos/gorilla/gorilla.html" class="pin-link">
+                            <div class="pin__form" id="gorilla">
+                                <div class="pin__img pin__img-gorilla"></div>
+                            </div>
+                            <div class="map-tooltip">
+                                <div class="map-tooltip__img map-tooltip__img-gorilla"></div>
+                                <div class="map-tooltip__description">
+                                    <h4 class="map-tooltip__title">GRACE Gorilla</h4>
+                                    <p class="map-tooltip__text">
+                                        <b>Region:</b> on an island near Los Angeles
+                                    </p>
+                                    <p class="map-tooltip__text">
+                                        <b>Population:</b> Over 100,000 western lowland gorillas
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="map__pin-container map__pin-container__panda">
+                        <a href="../zoos/panda/panda.html" class="pin-link">
+                            <div class="pin__form pin__form-active" id="panda">
+                                <div class="pin__img pin__img-panda"></div>
+                            </div>
+                            <div class="map-tooltip ">
+                                <div class="map-tooltip__img map-tooltip__img-panda"></div>
+                                <div class="map-tooltip__description ">
+                                    <h4 class="map-tooltip__title ">Panda</h4>
+                                    <p class="map-tooltip__text">
+                                        <b>Region:</b> Temperate forests high in the mountains of southwest China
+                                    </p>
+                                    <p class="map-tooltip__text">
+                                        <b>Population:</b> About 1,590 individuals
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <form class="map__form" action="../zoos/panda/panda.html#live_broadcast" target="_blank">
+                    <button class="first-screen__btn map__btn btn">
+                     <img src="../../assets/icons/play.svg" alt="" />
+                     <span>watch online</span>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__main">
+                <div class="footer__container">
+                    <div class="footer__callback">
+                        <a class="footer__logo" href="../../index.html"><img src="../../assets/icons/logo-white.svg" alt=""></a>
+                        <h4 class="callback__title" id="contacts">Contact us</h4>
+                        <form class="footer__form">
+                            <input class="footer__input" type="text" name="" id="" placeholder="Name" required> <br>
+                            <input class="footer__input" type="email" name="" id="" placeholder="Email" required> <br>
+                            <fieldset>
+                                <legend class="input__text">Please enter your message</legend>
+                                <textarea name="" id="" cols="" rows="6" maxlength="280" required></textarea>
+                            </fieldset>
+                            <input type="checkbox" name="" id="" required>
+                            <label class="input__text label__input_checkbox" for="">I agree to the processing of Personal Data</label>
+                            <button class="form__btn" type="submit">
+                                <p class="footer__text">send</p>
+                                <svg width="49" height="8" viewBox="0 0 49 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M48.3536 4.35355C48.5488 4.15829 48.5488 3.84171 48.3536 3.64645L45.1716 0.464466C44.9763 0.269204 44.6597 0.269204 44.4645 0.464466C44.2692 0.659728 44.2692 0.976311 44.4645 1.17157L47.2929 4L44.4645 6.82843C44.2692 7.02369 44.2692 7.34027 44.4645 7.53553C44.6597 7.7308 44.9763 7.7308 45.1716 7.53553L48.3536 4.35355ZM0 4.5L48 4.5V3.5L0 3.5L0 4.5Z" fill="#FEFEFE"/>
+                                </svg>        
+                            </button>
+                        </form>
+                    </div>
+                    <div class="footer__contacts">
+                        <div class="footer__address">
+                            <nav class="footer__nav">
+                                <ul class="footer__list">
+                                    <li class="footer__list-item">
+                                        <a class="item__link" href="../../index.html">About</a>
+                                    </li>
+                                    <li class="footer__list-item">
+                                        <a class="item__link" href="../zoos/panda/panda.html#live_broadcast">Zoos</a>
+                                    </li>
+                                    <li class="footer__list-item">
+                                        <a class="item__link" href="map.html">Map</a>
+                                    </li>
+                                    <li class="footer__list-item">
+                                        <a class="item__link" href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp?node-id=0%3A1">Design</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <p class="footer__text contacts__subtitle">ZOO Online Centre</p>
+                            <p class="footer__text contacts__text">132, Address District, Street</p>
+                            <p class="footer__text contacts__text contacts__open">Open Daily 10:00 am - 5:00 pm</p>
+                            <address>
+                                <a href="tel:(702) 163-3433">T(702) 163-3433</a> <br>
+                                <a href="mailto:zoo.online@gmail.com">zoo.online@gmail.com</a>
+                            </address>
+                            <ul class="footer__social-list">
+                                <li class="social__item">
+                                    <a href="https://www.instagram.com/" class="social__link"><img src="../../assets/icons/instagram.svg" alt=""></a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="https://twitter.com/" class="social__link"><img src="../../assets/icons/twitter.svg" alt=""></a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="https://vk.com/" class="social__link"><img src="../../assets/icons/vk.svg" alt=""></a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="https://youtube.com/" class="social__link"><img src="../../assets/icons/youtube.svg" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn footer__btn">donate for volunteers</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="copyrights">
+                    <p class="copyrights__text">©Noora Sagnayeva</p>
+                    <p class="copyrights__text">©RSSchool and ©Yem Digital - 2021</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./map.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Online-zoo</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <h1 class="visually-hidden">Online Zoo</h1>
+                <a href="index.html">
+                    <img class="header__logo" src="./assets/icons/logo-black.svg" alt="">
+                </a>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="nav__item">
+                            <a class="nav__link nav__link_active" href="#">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="pages/zoos/panda/panda.html#live_broadcast">Zoos</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="pages/map/map.html">Map</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#contacts">Contact Us</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp?node-id=0%3A1">Design</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__toggle">
+                    <div class="toggle__bg">
+                        <div class="toggle__dot"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="first-screen">
+            <div class="container">
+                <ul class="first-screen__socials">
+                    <li class="social__item">
+                        <a href="" class="social__link"><img src="assets/icons/instagram.svg" alt=""></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link"><img src="assets/icons/twitter.svg" alt=""></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link"><img src="assets/icons/youtube.svg" alt=""></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link"><img src="assets/icons/vk.svg" alt=""></a>
+                    </li>
+                </ul>
+                <div class="main-container">
+                    <h2 class="first-screen__title">
+                        Watch your favorite animal online
+                    </h2>
+                    <form class="first-screen__form" action="pages/zoos/panda/panda.html#live_broadcast" target="_blank">
+                        <button class="first-screen__btn btn">
+                         <img src="assets/icons/play.svg" alt="" />
+                         <span>watch online</span>
+                        </button>
+                    </form>
+                    <div class="first-screen__slider">
+                        <div class="first-screen__slider-container">
+                            <div class="slider__dots">
+                                <div class="slider__dot"></div>
+                                <div class="slider__dot"></div>
+                                <div class="slider__dot"></div>
+                                <div class="slider__dot"></div>
+                                <div class="slider__dot"></div>
+                                <div class="slider__dot"></div>
+                            </div>
+                            <div class="fs-slider__wrapper">
+                                <div class="fs-slider__inner">
+                                    <div class="first-screen__slide first-screen__slide-eagle first-screen__slide--prev">
+                                        <div class="overlay">
+                                            <p class="overlay__description">
+                                                Eagle's name is Ricky Daxdery. He is 3 years old. John Johnson is from USA. He loves worms.
+                                            </p>
+                                            <div class="overlay__buttons-wrap">
+                                                <a class="overlay__btn" href="./pages/zoos/eagle/eagle.html">
+                                                    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <circle cx="16" cy="16" r="15.5" stroke="white" />
+                                                            <path
+                                                            d="M21 16L13.5 20.3301V11.6699L21 16Z"
+                                                            fill="white"
+                                                            />
+                                                        </svg>
+                                                    <span>watch online</span>
+                                                </a>
+
+                                                <a class="overlay__btn" href="#">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <circle cx="12" cy="12" r="11.5" stroke="white" />
+                                                        <path
+                                                        d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                                                        fill="white"
+                                                        />
+                                                        </svg>
+                                                    <span>donate</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="first-screen__slide first-screen__slide-panda first-screen__slide--active">
+                                        <div class="overlay">
+                                            <p class="overlay__description">
+                                                Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.
+                                            </p>
+                                            <div class="overlay__buttons-wrap">
+                                                <a class="overlay__btn" href="./pages/zoos/panda/panda.html">
+                                                    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <circle cx="16" cy="16" r="15.5" stroke="white" />
+                                                            <path
+                                                            d="M21 16L13.5 20.3301V11.6699L21 16Z"
+                                                            fill="white"
+                                                            />
+                                                        </svg>
+                                                    <span>watch online</span>
+                                                </a>
+
+                                                <a class="overlay__btn" href="#">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <circle cx="12" cy="12" r="11.5" stroke="white" />
+                                                        <path
+                                                        d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                                                        fill="white"
+                                                        />
+                                                        </svg>
+                                                    <span>donate</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="first-screen__slide first-screen__slide-gorilla first-screen__slide--next">
+                                        <div class="overlay">
+                                            <p class="overlay__description">
+                                                Gorilla's name is Justin Brace. He is 7 years old. Justin Brace is from Africa. He loves bananas.
+                                            </p>
+                                            <div class="overlay__buttons-wrap">
+                                                <a class="overlay__btn" href="./pages/zoos/gorilla/gorilla.html">
+                                                    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <circle cx="16" cy="16" r="15.5" stroke="white" />
+                                                            <path
+                                                            d="M21 16L13.5 20.3301V11.6699L21 16Z"
+                                                            fill="white"
+                                                            />
+                                                        </svg>
+                                                    <span>watch online</span>
+                                                </a>
+
+                                                <a class="overlay__btn" href="#">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <circle cx="12" cy="12" r="11.5" stroke="white" />
+                                                        <path
+                                                        d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                                                        fill="white"
+                                                        />
+                                                        </svg>
+                                                    <span>donate</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="first-screen__slide first-screen__slide-alligator first-screen__slide--new-next">
+                                        <div class="overlay">
+                                            <p class="overlay__description">
+                                                Alligator name is Johnny Jackson. He is 15 years old. Johnny Jackson is from the south of the USA. He loves meat.
+                                            </p>
+                                            <div class="overlay__buttons-wrap">
+                                                <a class="overlay__btn" href="./pages/zoos/alligator/alligator.html">
+                                                    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <circle cx="16" cy="16" r="15.5" stroke="white" />
+                                                            <path
+                                                            d="M21 16L13.5 20.3301V11.6699L21 16Z"
+                                                            fill="white"
+                                                            />
+                                                        </svg>
+                                                    <span>watch online</span>
+                                                </a>
+
+                                                <a class="overlay__btn" href="#">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <circle cx="12" cy="12" r="11.5" stroke="white" />
+                                                        <path
+                                                        d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                                                        fill="white"
+                                                        />
+                                                        </svg>
+                                                    <span>donate</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="first-screen__slide first-screen__slide-fox first-screen__slide--next-new-next">
+                                        <div class="overlay">
+                                            <p class="overlay__description">
+                                                Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.
+                                            </p>
+                                            <div class="overlay__buttons-wrap">
+                                                <a class="overlay__btn" href="./pages/zoos/panda/panda.html">
+                                                    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <circle cx="16" cy="16" r="15.5" stroke="white" />
+                                                            <path
+                                                            d="M21 16L13.5 20.3301V11.6699L21 16Z"
+                                                            fill="white"
+                                                            />
+                                                        </svg>
+                                                    <span>watch online</span>
+                                                </a>
+
+                                                <a class="overlay__btn" href="#">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <circle cx="12" cy="12" r="11.5" stroke="white" />
+                                                        <path
+                                                        d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                                                        fill="white"
+                                                        />
+                                                        </svg>
+                                                    <span>donate</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="first-screen__slide first-screen__slide-koala first-screen__slide--next-new-next">
+                                        <div class="overlay">
+                                            <p class="overlay__description">
+                                                Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.
+                                            </p>
+                                            <div class="overlay__buttons-wrap">
+                                                <a class="overlay__btn" href="./pages/zoos/panda/panda.html">
+                                                    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <circle cx="16" cy="16" r="15.5" stroke="white" />
+                                                            <path
+                                                            d="M21 16L13.5 20.3301V11.6699L21 16Z"
+                                                            fill="white"
+                                                            />
+                                                        </svg>
+                                                    <span>watch online</span>
+                                                </a>
+
+                                                <a class="overlay__btn" href="#">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <circle cx="12" cy="12" r="11.5" stroke="white" />
+                                                        <path
+                                                        d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                                                        fill="white"
+                                                        />
+                                                        </svg>
+                                                    <span>donate</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="first-screen__slide first-screen__slide-elephant first-screen__slide--next-hide">
+                                        <div class="overlay">
+                                            <p class="overlay__description">
+                                                Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.
+                                            </p>
+                                            <div class="overlay__buttons-wrap">
+                                                <a class="overlay__btn" href="./pages/zoos/panda/panda.html">
+                                                    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <circle cx="16" cy="16" r="15.5" stroke="white" />
+                                                            <path
+                                                            d="M21 16L13.5 20.3301V11.6699L21 16Z"
+                                                            fill="white"
+                                                            />
+                                                        </svg>
+                                                    <span>watch online</span>
+                                                </a>
+
+                                                <a class="overlay__btn" href="#">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <circle cx="12" cy="12" r="11.5" stroke="white" />
+                                                        <path
+                                                        d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                                                        fill="white"
+                                                        />
+                                                        </svg>
+                                                    <span>donate</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="first-screen__slide first-screen__slide-cheetah first-screen__slide--next-hide">
+                                        <div class="overlay">
+                                            <p class="overlay__description">
+                                                Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.
+                                            </p>
+                                            <div class="overlay__buttons-wrap">
+                                                <a class="overlay__btn" href="./pages/zoos/panda/panda.html">
+                                                    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <circle cx="16" cy="16" r="15.5" stroke="white" />
+                                                            <path
+                                                            d="M21 16L13.5 20.3301V11.6699L21 16Z"
+                                                            fill="white"
+                                                            />
+                                                        </svg>
+                                                    <span>watch online</span>
+                                                </a>
+
+                                                <a class="overlay__btn" href="#">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <circle cx="12" cy="12" r="11.5" stroke="white" />
+                                                        <path
+                                                        d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                                                        fill="white"
+                                                        />
+                                                        </svg>
+                                                    <span>donate</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <form class="main__form_range first-screen__form_range">
+                            <label>
+                                <span class="label__text label__text_active fp-text">02/</span><span class="label__text">08</span> <br />
+                                <input class="range pets_range first-screen_range" type="range" min="0" max="7" value="1" />
+                            </label>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="second-screen">
+            <div class="main-container">
+                <div class="second-screen__container">
+                    <h3 class="second-screen__title">How it works?</h3>
+                    <p class="second-screen__text">
+                        As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat, and we are determined to assist in all aspects, including providing veterinary support and raising <span> much-needed</span>                        emergency funds. Zoo Online saves wildlife and inspires everyone to make conservation a priority in their lives. Animals have the right to a pain-free and happy life. They have equal claim to the resources of this planet, and deserve
+                        a life of dignity and compassion.As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat.
+                    </p>
+                    <img class="second-screen__img" src="assets/images/deers.png" alt="photo of deers" />
+                    <form class="form_range">
+                        <label>
+                            <span class="label__text label__text_active">01/</span><span class="label__text">04</span> <br />
+                            <input class="range pets_range" type="range" min="0" max="3" value="0" />
+                        </label>
+                    </form>
+                    <form class="second-screen__form" action="pages/zoos/panda/panda.html" target="_blank" method="POST">
+                        <button class="first-screen__btn second-screen__btn btn">
+                            <img src="/online-zoo/assets/icons/play.svg" alt="" />
+                            <span>watch online</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="inspiration">
+            <div class="main-container">
+                <ul class="goals">
+                    <li class="goals__item">
+                        <img src="assets/icons/problem-solving.svg" alt="" width="80" height="80">
+                        <h4 class="goals__title">What inspires us?</h4>
+                        <p class="goals__text">As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat, and we are determined to assist in all aspects.</p>
+                    </li>
+                    <li class="goals__item">
+                        <img src="assets/icons/achievement.svg" alt="" width="80" height="80">
+                        <h4 class="goals__title">Our mission</h4>
+                        <p class="goals__text">Zoo Online saves wildlife and inspires everyone to make conservation a priority in their lives. </p>
+                    </li>
+                    <li class="goals__item">
+                        <img src="assets/icons/love.svg" alt="" width="80" height="80">
+                        <h4 class="goals__title">What we believe in?</h4>
+                        <p class="goals__text">Animals have the right to a pain-free and happy life. They have equal claim to the resources of this planet, and deserve a life of dignity and compassion.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="pets">
+            <div class="subcontainer">
+                <img class="prev slider__arrow" src="assets/icons/prev-arrow-gray.svg" alt="">
+                <div class="main-container">
+                    <h3 class="pets__title">Pets in Zoo</h3>
+                    <div class="pets__slider-container">
+                        <div class="pets__slider">
+                            <div class="pets__slide pets__slide--active panda">
+                                <img class="pets__img" src="assets/images/panda.png" alt="panda on picture">
+                                <div class="overlay">
+                                    <p class="overlay__description">
+                                        Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.
+                                    </p>
+                                    <div class="overlay__buttons-wrap">
+                                        <a class="overlay__btn" href="./pages/zoos/panda/panda.html">
+                                            <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="16" cy="16" r="15.5" stroke="white" />
+                                                <path
+                                                d="M21 16L13.5 20.3301V11.6699L21 16Z"
+                                                fill="white"
+                                                />
+                                            </svg>
+                                            <span>watch online</span></a>
+
+                                        <a class="overlay__btn" href="#">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                                            <path
+                                            d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                                            fill="white"
+                                            />
+                                            </svg>
+                                            <span>donate</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pets__slide bird">
+                                <img class="pets__img" src="assets/images/bird.png" alt="eagle on picture">
+                                <div class="overlay">
+                                    <p class="overlay__description">
+                                        Eagle's name is Ricky Daxdery. He is 3 years old. John Johnson is from USA. He loves worms.
+                                    </p>
+                                    <div class="overlay__buttons-wrap">
+                                        <a class="overlay__btn" href="./pages/zoos/eagle/eagle.html">
+                                            <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="16" cy="16" r="15.5" stroke="white" />
+                                                <path
+                                                d="M21 16L13.5 20.3301V11.6699L21 16Z"
+                                                fill="white"
+                                                />
+                                            </svg>
+                                            <span>watch online</span></a>
+
+                                        <a class="overlay__btn" href="#">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                                            <path
+                                            d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                                            fill="white"
+                                            />
+                                            </svg>
+                                            <span>donate</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pets__slide gorilla">
+                                <img class="pets__img" src="assets/images/gorilla.png" alt="gorilla on picture">
+                                <div class="overlay">
+                                    <p class="overlay__description">
+                                        Gorilla's name is Justin Brace. He is 7 years old. Justin Brace is from Africa. He loves bananas.
+                                    </p>
+                                    <div class="overlay__buttons-wrap">
+                                        <a class="overlay__btn" href="./pages/zoos/gorilla/gorilla.html">
+                                            <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="16" cy="16" r="15.5" stroke="white" />
+                                                <path
+                                                d="M21 16L13.5 20.3301V11.6699L21 16Z"
+                                                fill="white"
+                                                />
+                                            </svg>
+                                            <span>watch online</span></a>
+
+                                        <a class="overlay__btn" href="#">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                                            <path
+                                            d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                                            fill="white"
+                                            />
+                                            </svg>
+                                            <span>donate</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pets__slide alligator">
+                                <img class="pets__img" src="assets/images/alligator.png" alt="alligator on picture">
+                                <div class="overlay">
+                                    <p class="overlay__description">
+                                        Alligator name is Johnny Jackson. He is 15 years old. Johnny Jackson is from the south of the USA. He loves meat.
+                                    </p>
+                                    <div class="overlay__buttons-wrap">
+                                        <a class="overlay__btn" href="./pages/zoos/alligator/alligator.html">
+                                            <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="16" cy="16" r="15.5" stroke="white" />
+                                                <path
+                                                d="M21 16L13.5 20.3301V11.6699L21 16Z"
+                                                fill="white"
+                                                />
+                                            </svg>
+                                            <span>watch online</span></a>
+
+                                        <a class="overlay__btn" href="#">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                                            <path
+                                            d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                                            fill="white"
+                                            />
+                                            </svg>
+                                            <span>donate</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pets__slide panda">
+                                <img class="pets__img" src="assets/images/panda.png" alt="panda on picture">
+                                <div class="overlay">
+                                    <p class="overlay__description">
+                                        Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.
+                                    </p>
+                                    <div class="overlay__buttons-wrap">
+                                        <a class="overlay__btn" href="./pages/zoos/panda/panda.html">
+                                            <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="16" cy="16" r="15.5" stroke="white" />
+                                                <path
+                                                d="M21 16L13.5 20.3301V11.6699L21 16Z"
+                                                fill="white"
+                                                />
+                                            </svg>
+                                            <span>watch online</span></a>
+
+                                        <a class="overlay__btn" href="#">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                                            <path
+                                            d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                                            fill="white"
+                                            />
+                                            </svg>
+                                            <span>donate</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pets__slide bird">
+                                <img class="pets__img" src="assets/images/bird.png" alt="eagle on picture">
+                                <div class="overlay">
+                                    <p class="overlay__description">
+                                        Eagle's name is Ricky Daxdery. He is 3 years old. John Johnson is from USA. He loves worms.
+                                    </p>
+                                    <div class="overlay__buttons-wrap">
+                                        <a class="overlay__btn" href="./pages/zoos/eagle/eagle.html">
+                                            <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="16" cy="16" r="15.5" stroke="white" />
+                                                <path
+                                                d="M21 16L13.5 20.3301V11.6699L21 16Z"
+                                                fill="white"
+                                                />
+                                            </svg>
+                                            <span>watch online</span></a>
+
+                                        <a class="overlay__btn" href="#">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                                            <path
+                                            d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                                            fill="white"
+                                            />
+                                            </svg>
+                                            <span>donate</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pets__slide gorilla">
+                                <img class="pets__img" src="assets/images/gorilla.png" alt="gorilla on picture">
+                                <div class="overlay">
+                                    <p class="overlay__description">
+                                        Gorilla's name is Justin Brace. He is 7 years old. Justin Brace is from Africa. He loves bananas.
+                                    </p>
+                                    <div class="overlay__buttons-wrap">
+                                        <a class="overlay__btn" href="./pages/zoos/gorilla/gorilla.html">
+                                            <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="16" cy="16" r="15.5" stroke="white" />
+                                                <path
+                                                d="M21 16L13.5 20.3301V11.6699L21 16Z"
+                                                fill="white"
+                                                />
+                                            </svg>
+                                            <span>watch online</span></a>
+
+                                        <a class="overlay__btn" href="#">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                                            <path
+                                            d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                                            fill="white"
+                                            />
+                                            </svg>
+                                            <span>donate</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pets__slide alligator">
+                                <img class="pets__img" src="assets/images/alligator.png" alt="alligator on picture">
+                                <div class="overlay">
+                                    <p class="overlay__description">
+                                        Alligator name is Johnny Jackson. He is 15 years old. Johnny Jackson is from the south of the USA. He loves meat.
+                                    </p>
+                                    <div class="overlay__buttons-wrap">
+                                        <a class="overlay__btn" href="./pages/zoos/alligator/alligator.html">
+                                            <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="16" cy="16" r="15.5" stroke="white" />
+                                                <path
+                                                d="M21 16L13.5 20.3301V11.6699L21 16Z"
+                                                fill="white"
+                                                />
+                                            </svg>
+                                            <span>watch online</span></a>
+
+                                        <a class="overlay__btn" href="#">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                                            <path
+                                            d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                                            fill="white"
+                                            />
+                                            </svg>
+                                            <span>donate</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="form_range main__form_range pets__form">
+                        <label>
+                            <span class="label__text label__text_active pets__text">01/</span><span class="label__text">08</span> <br />
+                            <input class="range pets_range pets__input" type="range" min="0" max="7" value="0" />
+                        </label>
+                    </form>
+                    <form class="pets__form_btn" action="pages/map/map.html" target="_blank">
+                        <button class="pets__btn btn">Choose your favorite</button>
+                    </form>
+                </div>
+                <img class="next slider__arrow" src="assets/icons/next-arrow-black.svg" alt="">
+            </div>
+        </section>
+        <section class="feed">
+            <div class="main-container">
+                <h3 class="feed__title">Pay and feed</h3>
+                <p class="feed__text">The opportunity to easily and naturally (but as often as possible) donate to the needs of animals that you like.</p>
+                <div class="donate-steps">
+                    <div class="donate-step">
+                        <img class="donate-step__img" src="assets/icons/visa.svg" alt="" width="65" height="52.89">
+                        <h4 class="donate-step__title">You pay with a VISA card</h4>
+                    </div>
+                    <img class="donate-step-arrow" src="/online-zoo/assets/icons/Arrow 1.svg" alt="">
+                    <div class="donate-step">
+                        <img class="donate-step__img" src="assets/icons/zoo.svg" alt="" width="60" height="60">
+                        <h4 class="donate-step__title">Payment goes to the Zoo</h4>
+                    </div>
+                    <img class="donate-step-arrow" src="/online-zoo/assets/icons/Arrow 2.svg" alt="">
+                    <div class="donate-step">
+                        <img class="donate-step__img" src="assets/icons/panda.svg" alt="" width="70" height="56.22">
+                        <h4 class="donate-step__title">Panda gets the bamboo</h4>
+                    </div>
+                </div>
+                <button class="donate__btn btn">Donate</button>
+            </div>
+        </section>
+        <section class="testimonials">
+            <div class="subcontainer">
+                <img class="prev-prev slider__arrow" src="assets/icons/prev-arrow-black.svg" alt="">
+                <div class="main-container">
+                    <h3 class="testimonials__title">Testimonials</h3>
+                    <div class="users">
+                        <div class="user">
+                            <img class="user__img" src="assets/images/nastya.png" alt="Nastya's avatar">
+                            <h4 class="user__title">Nastya Sidorova</h4>
+                            <p class="user__text">As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat.</p>
+                        </div>
+                        <div class="user">
+                            <img class="user__img" src="assets/images/vlad kim.png" alt="Vlad's avatar">
+                            <h4 class="user__title">Vlad Kim</h4>
+                            <p class="user__text">As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat.</p>
+                        </div>
+                    </div>
+                    <form class="form_range main__form_range">
+                        <label>
+                            <span class="label__text label__text_active">02/</span><span class="label__text">08</span> <br />
+                            <input class="range pets_range" type="range" min="0" max="7" value="1" />
+                        </label>
+                    </form>
+                    <button class="donate__btn feedback__btn btn">Leave feedback</button>
+                </div>
+                <img class="next-next slider__arrow" src="assets/icons/next-arrow-black.svg" alt="">
+            </div>
+        </section>
+        <section class="map">
+            <div class="main-container">
+                <h3 class="map__title">Map</h3>
+                <div class="map__container">
+                    <div class="map__pin-container map__pin-container__eagle">
+                        <a href="" class="pin-link">
+                            <div class="pin__form">
+                                <div class="pin__img pin__img-eagle"></div>
+                            </div>
+                            <div class="map-tooltip">
+                                <div class="map-tooltip__img map-tooltip__img-eagle"></div>
+                                <div class="map-tooltip__description">
+                                    <h4 class="map-tooltip__title">West End Bald Eagle</h4>
+                                    <p class="map-tooltip__text">
+                                        <b>Region:</b> on an island near Los Angeles
+                                    </p>
+                                    <p class="map-tooltip__text">
+                                        <b>Population:</b> more than 270 pairs in 2013
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="map__pin-container map__pin-container__alligator">
+                        <a href="" class="pin-link">
+                            <div class="pin__form">
+                                <div class="pin__img pin__img-alligator"></div>
+                            </div>
+                            <div class="map-tooltip">
+                                <div class="map-tooltip__img map-tooltip__img-alligator"></div>
+                                <div class="map-tooltip__description">
+                                    <h4 class="map-tooltip__title">Alligator</h4>
+                                    <p class="map-tooltip__text">
+                                        <b>Region:</b> on an island near Los Angeles
+                                    </p>
+                                    <p class="map-tooltip__text">
+                                        <b>Population:</b> Roughly 1.25 million
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="map__pin-container map__pin-container__gorilla">
+                        <a href="" class="pin-link">
+                            <div class="pin__form">
+                                <div class="pin__img pin__img-gorilla"></div>
+                            </div>
+                            <div class="map-tooltip">
+                                <div class="map-tooltip__img map-tooltip__img-gorilla"></div>
+                                <div class="map-tooltip__description">
+                                    <h4 class="map-tooltip__title">GRACE Gorilla</h4>
+                                    <p class="map-tooltip__text">
+                                        <b>Region:</b> on an island near Los Angeles
+                                    </p>
+                                    <p class="map-tooltip__text">
+                                        <b>Population:</b> Over 100,000 western lowland gorillas
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="map__pin-container map__pin-container__panda">
+                        <a href="" class="pin-link">
+                            <div class="pin__form">
+                                <div class="pin__img pin__img-panda"></div>
+                            </div>
+                            <div class="map-tooltip ">
+                                <div class="map-tooltip__img map-tooltip__img-panda "></div>
+                                <div class="map-tooltip__description ">
+                                    <h4 class="map-tooltip__title ">Panda</h4>
+                                    <p class="map-tooltip__text">
+                                        <b>Region:</b> Temperate forests high in the mountains of southwest China
+                                    </p>
+                                    <p class="map-tooltip__text">
+                                        <b>Population:</b> About 1,590 individuals
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <form class="map__form" action="pages/zoos/panda/panda.html#live_broadcast" target="_blank">
+                    <button class="first-screen__btn map__btn btn">
+                     <img src="assets/icons/play.svg" alt="" />
+                     <span>watch online</span>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__main">
+                <div class="footer__container">
+                    <div class="footer__callback">
+                        <a class="footer__logo" href="index.html"><img src="./assets/icons/logo-white.svg" alt=""></a>
+                        <h4 class="callback__title" id="contacts">Contact us</h4>
+                        <form class="footer__form">
+                            <input class="footer__input" type="text" name="" id="" placeholder="Name" required> <br>
+                            <input class="footer__input" type="email" name="" id="" placeholder="Email" required> <br>
+                            <fieldset>
+                                <legend class="input__text">Please enter your message</legend>
+                                <textarea name="" id="" cols="" rows="6" maxlength="280" required></textarea>
+                            </fieldset>
+                            <input type="checkbox" name="" id="">
+                            <label class="input__text label__input_checkbox" for="" required>I agree to the processing of Personal Data</label>
+                            <button class="form__btn" type="submit">
+                                <p class="footer__text">send</p>
+                                <svg width="49" height="8" viewBox="0 0 49 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M48.3536 4.35355C48.5488 4.15829 48.5488 3.84171 48.3536 3.64645L45.1716 0.464466C44.9763 0.269204 44.6597 0.269204 44.4645 0.464466C44.2692 0.659728 44.2692 0.976311 44.4645 1.17157L47.2929 4L44.4645 6.82843C44.2692 7.02369 44.2692 7.34027 44.4645 7.53553C44.6597 7.7308 44.9763 7.7308 45.1716 7.53553L48.3536 4.35355ZM0 4.5L48 4.5V3.5L0 3.5L0 4.5Z" fill="#FEFEFE"/>
+                                </svg>        
+                            </button>
+                        </form>
+                    </div>
+                    <div class="footer__contacts">
+                        <div class="footer__address">
+                            <nav class="footer__nav">
+                                <ul class="footer__list">
+                                    <li class="footer__list-item">
+                                        <a class="item__link" href="index.html">About</a>
+                                    </li>
+                                    <li class="footer__list-item">
+                                        <a class="item__link" href="pages/zoos/panda/panda.html#live_broadcast">Zoos</a>
+                                    </li>
+                                    <li class="footer__list-item">
+                                        <a class="item__link" href="pages/map/map.html">Map</a>
+                                    </li>
+                                    <li class="footer__list-item">
+                                        <a class="item__link" href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp?node-id=0%3A1">Design</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <p class="footer__text contacts__subtitle">ZOO Online Centre</p>
+                            <p class="footer__text contacts__text">132, Address District, Street</p>
+                            <p class="footer__text contacts__text contacts__open">Open Daily 10:00 am - 5:00 pm</p>
+                            <address>
+                                <a href="tel:(702) 163-3433">T(702) 163-3433</a> <br>
+                                <a href="mailto:zoo.online@gmail.com">zoo.online@gmail.com</a>
+                            </address>
+                            <ul class="footer__social-list">
+                                <li class="social__item">
+                                    <a href="" class="social__link"><img src="assets/icons/instagram.svg" alt=""></a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="" class="social__link"><img src="assets/icons/twitter.svg" alt=""></a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="" class="social__link"><img src="assets/icons/vk.svg" alt=""></a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="" class="social__link"><img src="assets/icons/youtube.svg" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn footer__btn">donate for volunteers</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="copyrights">
+                    <p class="copyrights__text">©Noora Sagnayeva</p>
+                    <p class="copyrights__text">©RSSchool and ©Yem Digital - 2021</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
